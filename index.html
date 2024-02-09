@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <h1>HAPPY CHOCOLATE DAY</h1>
+        <div class="postcard1"></div>
+        <div class="postcard">
+            <div class="letter"></div>
+            <p>
+                <span> DEAR LOVE ,</span>
+                <br/>
+               May this chocolate day , bring a lot of sweetness to your life.
+                <strong> HAPPY CHOCOLATE DAY &#10084 \_/</strong><br/>
+        
+        </p>
+        <a href="new.html">CLICK HERE</a>
+    </div>
+
+</div>
+<div class="heart-container">
+    <div class="heart">&hearts;</div>
+    <div class="heart">&hearts;</div>
+    <div class="heart">&hearts;</div>
+    <div class="heart">&hearts;</div>
+    <div class="heart">&hearts;</div>
+    <div class="heart">&hearts;</div>
+    <div class="heart">&hearts;</div>
+    <div class="heart">&hearts;</div>
+    <div class="heart">&hearts;</div>
+    <div class="heart">&hearts;</div>
+    <div class="heart">&hearts;</div>
+    <div class="heart">&hearts;</div>
+</div>
+
+
+
+<footer><p>made by Creative_ally59</p></footer>
+</body>
+<script>
+    function createHeart(){
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.innerHTML = '&hearts;';
+    heart.style.left = Math.random() * window.innerWidth + 'px';
+    document.body.appendChild(heart);
+    setTimeout(() => {
+        heart.remove();
+    }, 5000);
+}
+
+setInterval(createHeart,1000);
+</script>
+</html>
